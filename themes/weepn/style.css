@@ -1,0 +1,36 @@
+/*!
+Theme Name: Weepn
+Theme URI: https://themes.vecurosoft.com/weepn/
+Author: Vecurosoft
+Author URI: https://themeforest.net/user/vecuro_themes
+Description: Weepn is a multipurpose VPN, SaaS and cloud service HTML website template designed for all types of VPN, cloud service, IP security, technology, domain and hosting companies.
+Version: 1.0.2
+Tested up to: 7.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: weepn
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+weepn is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+@media only screen and (min-width: 1400px) {
+    .elementor-section.elementor-section-boxed>.elementor-container {
+        max-width: 1320px !important;
+    }
+    .e-con {
+        --container-max-width: 1320px !important;
+        --container-default-padding-top: 0px;
+        --container-default-padding-right: 0px;
+        --container-default-padding-bottom: 0px;
+        --container-default-padding-left: 0px;
+    }
+}

@@ -1,0 +1,150 @@
+.weepn-login-popup {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weepn-login-popup-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.weepn-login-popup-content {
+    position: relative;
+    background-color: var(--body-bg);
+    padding: 60px;
+    min-width: 520px;
+    z-index: 2;
+    border-radius: 6px;
+    border-bottom: 6px solid var(--sec-color);
+}
+
+.weepn-login-popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 2em;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+.weepn-login-popup-register-link {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.weepn-login-popup {
+    &-header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &-title {
+        color: var(--white-color);
+        text-transform: capitalize;
+        font-family: var(--body-font);
+    }
+
+    &-subtitle {
+        color: var(--white-color);
+        text-transform: capitalize;
+        font-family: var(--body-font);
+        margin-bottom: 0;
+    }
+}
+
+.login-page__form__checked-box {
+    #rememberme {
+        display: none;
+    }
+
+    label {
+        color: var(--white-color);
+    }
+}
+
+.login-page__form__input-box {
+    position: relative;
+    margin-bottom: 15px;
+
+    input {
+        height: 60px;
+        line-height: 60px;
+        background-color: transparent;
+        padding-left: 85px;
+        color: var(--white-color);
+        border-color: var(--white-color);
+        border-radius: 6px;
+
+        &::placeholder {
+            color: var(--white-color);
+        }
+    }
+
+    & span.vs-form-icon {
+        position: absolute;
+        left: 0px;
+        line-height: 60px;
+        width: 60px;
+        text-align: center;
+        color: var(--white-color);
+        border-right: 1px solid var(--white-color);
+    }
+
+    input[type=checkbox]~label:before,
+    input[type=checkbox]:checked~label:before {
+        background-color: var(--title-color);
+        border-color: var(--vs-secondary-color);
+
+    }
+
+    button {
+        font-size: 16px;
+        font-weight: 600;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        text-transform: capitalize;
+        text-align: center;
+        border: none;
+        color: var(--title-color);
+        background-color: var(--theme-color);
+        border-radius: 40px;
+
+        &:hover {
+            color: var(--title-color);
+            background-color: var(--vs-secondary-color);
+        }
+    }
+}
+
+.weepn-login-popup-register-link {
+    color: var(--white-color);
+
+    a {
+        color: currentColor;
+        background-image: linear-gradient(currentcolor, currentcolor), linear-gradient(currentcolor, currentcolor);
+        display: inline;
+        background-size: 0% 1px, 0 1px;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 0.4s linear;
+
+        &:hover {
+            background-size: 0% 1px, 100% 1px;
+        }
+    }
+}
